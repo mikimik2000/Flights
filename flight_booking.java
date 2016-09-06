@@ -19,9 +19,9 @@ public class flight_booking {
   @BeforeClass
   public void beforeClass() {
 	    driver = new FirefoxDriver();
-		baseUrl = "https://www.expedia.com/";
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	    baseUrl = "https://www.expedia.com/";
+	    driver.manage().window().maximize();
+	    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	    driver.get(baseUrl);
   
   }	
@@ -40,10 +40,10 @@ public class flight_booking {
   
   @Test
   public void fillinAdvanceInfo (){
-	  HomePage.clickOnAdvancedLink(driver);
+          HomePage.clickOnAdvancedLink(driver);
 	  HomePage.clickNonStopcheckBox(driver);
-      HomePage.selectFlightClass(driver, "Economy/Coach");
-      HomePage.clickOnSearchButton(driver);
+          HomePage.selectFlightClass(driver, "Economy/Coach");
+          HomePage.clickOnSearchButton(driver);
 	  
   }
   
