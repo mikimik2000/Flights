@@ -42,7 +42,7 @@ public class Login_Test {
   
   
   @Test
-  public void test1_validLoginTest() throws Exception  {
+  public void test1_validLoginTest(){
 	  
 	  WebElement UsernameLink = driver.findElement(By.id("username"));
 	  UsernameLink.sendKeys("tomsmith");
